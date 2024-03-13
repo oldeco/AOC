@@ -1,0 +1,41 @@
+/* General body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Full-screen background image */
+.background-image {
+    background-image: url('background.jpg'); /* Path to your background image */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the entire page */
+    position: fixed; /* Make it fixed so content scrolls over it */
+    width: 100%;
+    z-index: -1; /* Ensure it stays behind content */
+}
+
+/* Container for image links */
+.image-links {
+    position: fixed; /* Fixed position to the right side */
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 10; /* Ensure it's above the background */
+}
+
+/* Style for the image links */
+.image-links a img {
+    display: block; /* Stack images vertically */
+    margin: 10px; /* Add some space between images */
+    width: 100px; /* Adjust width as needed */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.image-links a img:hover {
+    transform: scale(1.1); /* Slightly enlarge images on hover */
+}
