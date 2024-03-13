@@ -9,7 +9,7 @@ body, html {
 
 /* Full-screen background image */
 .background-image {
-    background-image: url('background.jpg'); /* Path to your background image */
+    background-image: url('backgroundaoc.png'); /* Path to your background image */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
